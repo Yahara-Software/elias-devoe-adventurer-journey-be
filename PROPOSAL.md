@@ -11,13 +11,11 @@
 
 ### Initial Development Plan
 1. Architecture: Clean Code (Controller -> Use Case -> Service -> Model)
-1. Set up docker environment: fastapi, db
+1. Set up docker environment: flask, db
 1. Code up minimal choices
 1. Tests and mock data
 
 
 ## Secondary Development Options
 1. Metadata (time, etc.)
-1. Auth/users
-1. Decide how to view; async timed producer loop so moves are visualized as the backend emits new locations, or only end state?
-1. Mock frontend interface consuming the API
+1. Auth

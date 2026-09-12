@@ -28,7 +28,19 @@ class ApiError(Exception):
         return body
 
 
+class MalformedPayloadError(ApiError):
+    """Raised when a move request does not contain the correct fields."""
+
+    status_code = 422
+
+
 class MalformedDirectionError(ApiError):
     """Raised when a direction string does not contain the expected alternating n_steps/FBRL format"""
     
     status_code = 422
+
+
+class AdventurerNotFoundError(ApiError):
+    """Raised when an adventurer for whom a move is updated/requested does not exist"""
+    
+    status_code = 404
