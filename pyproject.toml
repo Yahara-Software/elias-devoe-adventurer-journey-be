@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ELIAS-DEVOE-ADVENTURER-JOURNEY-BE"
+version = "0.1.0"
+description = "Yahara Software take-home"
+authors = ["Elias DeVoe"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.0"
+sqlalchemy = "^2.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
