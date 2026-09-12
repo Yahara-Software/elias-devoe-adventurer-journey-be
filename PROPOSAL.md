@@ -11,7 +11,7 @@
 
 ### Initial Development Plan
 1. Architecture: Clean Code (Controller -> Use Case -> Service -> Model)
-1. Set up docker environment: fastapi, db, frontend
+1. Set up docker environment: fastapi, db
 1. Code up minimal choices
 1. Tests and mock data
 
