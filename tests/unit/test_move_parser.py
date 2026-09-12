@@ -8,7 +8,7 @@ from app.errors.errors import MalformedDirectionError
 
 
 def test_non_digit_start_raises():
-    directions = "U7L"
+    directions = "F7L"
     with pytest.raises(MalformedDirectionError):
         aggregate_moves(directions, Position(0, 0))
 
@@ -20,13 +20,13 @@ def test_non_allowed_direction_raises():
 
 
 def test_subsequent_directions_raises():
-    directions = "7UD"
+    directions = "7FD"
     with pytest.raises(MalformedDirectionError):
         aggregate_moves(directions, Position(0, 0))
 
 
 def test_missing_final_direction_raises():
-    directions = "7U4D2"
+    directions = "7F4D2"
     with pytest.raises(MalformedDirectionError):
         aggregate_moves(directions, Position(0, 0))
 

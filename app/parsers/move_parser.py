@@ -27,7 +27,7 @@ def my_parse_int(num: str) -> int:
     return res
 
 
-def euclidean_distance(pos: Position) -> int:
+def euclidean_distance(pos: Position) -> float:
     """
     Returns the 2D euclidean distance from a position to the origin
     """

@@ -1,4 +1,4 @@
-"""movement_controller.py
+"""move_controller.py
 """
 
 from flask import Blueprint, jsonify, request

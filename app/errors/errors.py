@@ -1,6 +1,6 @@
 """errors.py
 
-Typed exception heirarchy for the adventurer backend API.
+Typed exceptions for the adventurer backend API.
 """
 
 from typing import Any
